@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		let user = {
+			login: 'admin',
+			password: '0000'
+		};
+		console.log(user);
+		let whatLogin = prompt(`Введи логін`);
+		let whatPassword = prompt(`Введи пароль`);
+	  if (user.login == whatLogin && user.password == whatPassword){
+			alert(`Вхід виконано`);
+		}else {
+			if (user.login == whatLogin && user.password != whatPassword) {
+				alert(`Пароль невірний`);
+			} else{
+				alert(`Користувача не знайдено`);
+			}
+		} 
+
+
+
+	</script>
+</body>
+</html>

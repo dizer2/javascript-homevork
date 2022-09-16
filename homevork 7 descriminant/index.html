@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Funcial</title>
+</head>
+<body>
+
+	
+	<script>
+let a = prompt(`Введи число a`)
+let b = prompt(`Введи число b`)
+let c = prompt(`Введи число c`)
+
+		function equation (){
+			let d = b*b - 4*a*c;
+			console.log(`Дескріменант: ` + d)
+			if(d < 0){
+				console.log(`Коренів немає`)
+			}
+			if(d == 0){
+				let x1 = (-b) / (2 * a)
+				console.log(`Один корінь: ` + x1)
+			}
+			if(d > 0){
+				let x1 = (-b + Math.sqrt(d)) / (2 * a)
+				let x2 = (-b - Math.sqrt(d)) / (2 * a)
+				console.log(`x1: ` + x1)
+				console.log(`x2: ` + x2)
+
+
+			}
+
+		
+		}
+equation();
+
+	</script>
+</body>
+</html>
